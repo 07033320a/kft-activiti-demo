@@ -53,10 +53,12 @@
         </c:if>
 
 		<div style="text-align: center;">
-            <h2>工作流引擎Activiti演示项目</h2>
+            <h2>${prop['project.title']}</h2>
             <h3>
-                <a href="https://github.com/henryyan/kft-activiti-demo" target="_blank" style="text-decoration: none;">kft-activiti-demo（v${prop['system.version']}）</a>
-                <a href="http://www.kafeitu.me/about.html" target="_blank" style="text-decoration: none;">（By 咖啡兔）</a></h3>
+                <!-- <a href="https://github.com/henryyan/kft-activiti-demo" target="_blank" style="text-decoration: none;">kft-activiti-demo（v${prop['system.version']}）</a>
+                <a href="http://www.kafeitu.me/about.html" target="_blank" style="text-decoration: none;">（By ${prop['provide.by']}）</a>
+                -->
+            </h3>
 		</div>
 		<hr />
 		<form action="${ctx }/user/logon" method="get">
@@ -72,13 +74,13 @@
 				<tr>
 					<td>&nbsp;</td>
 					<td>
-						<button type="submit">登录Demo</button>
+						<button type="submit">登录</button>
 					</td>
 				</tr>
 			</table>
 		</form>
 		<hr />
-		<div>
+		<div style="display:none;">
             <div style="float:left; width: 48%;margin-right: 2%;">
                 <table border="1">
                     <caption>用户列表(密码：000000)</caption>
@@ -117,7 +119,7 @@
                 </dl>
             </div>
 		</div>
-        <hr />
+        <%-- <hr />
         <table>
             <caption>如果登录失败，请初始化用户数据，在项目根目录执行：</caption>
             <thead>
@@ -159,7 +161,7 @@
                     <li>Activiti中文群4(<span style="color:red">已满</span>)：327913744</li>
                 </ul>
             </div>
-        </div>
+        </div> --%>
     </div>
 </body>
 </html>
