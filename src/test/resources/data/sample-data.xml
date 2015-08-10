@@ -4,12 +4,24 @@
 	<ACT_ID_GROUP ID_="deptLeader" NAME_="部门领导" />
 	<ACT_ID_GROUP ID_="hr" NAME_="人事" />
 	<ACT_ID_GROUP ID_="user" NAME_="用户" />
-
+	<!-- add the new group for Quality Inspect -->
+	<ACT_ID_GROUP ID_="controler" NAME_="管控中心" />
+	<ACT_ID_GROUP ID_="inspector" NAME_="质检中心" />
+	<ACT_ID_GROUP ID_="vendor" NAME_="销售商" />
+	<ACT_ID_GROUP ID_="producer" NAME_="生产商" />
+	<!-- Group end  -->
+	
 	<ACT_ID_USER ID_="admin" EMAIL_="admin@kafeitu.me" FIRST_="Admin" LAST_="Kad" PWD_="000000" />
 	<ACT_ID_USER ID_="hruser" EMAIL_="hr@gmail.com" FIRST_="Lili" LAST_="Zhang" PWD_="000000" />
 	<ACT_ID_USER ID_="leaderuser" EMAIL_="leader@gmail.com" FIRST_="Jhon" LAST_="Li" PWD_="000000" />
 	<ACT_ID_USER ID_="kafeitu" EMAIL_="yanhonglei@gmail.com" FIRST_="Henry" LAST_="Yan" PWD_="000000" />
-
+	
+	<!-- add the new user for Quality Inspect -->
+	<ACT_ID_USER ID_="test1" EMAIL_="xuwenfei886@gmail.com" FIRST_="Merlin" LAST_="Xu" PWD_="000000" />
+	<ACT_ID_USER ID_="test2" EMAIL_="xuwenfei886@gmail.com" FIRST_="Merlin" LAST_="Xu" PWD_="000000" />
+	<ACT_ID_USER ID_="test3" EMAIL_="xuwenfei886@gmail.com" FIRST_="Merlin" LAST_="Xu" PWD_="000000" />
+	<ACT_ID_USER ID_="test4" EMAIL_="xuwenfei886@gmail.com" FIRST_="Merlin" LAST_="Xu" PWD_="000000" />
+	
 	<ACT_ID_MEMBERSHIP USER_ID_="admin" GROUP_ID_="admin" />
 	<ACT_ID_MEMBERSHIP USER_ID_="admin" GROUP_ID_="user" />
 	
@@ -20,4 +32,10 @@
 	<ACT_ID_MEMBERSHIP USER_ID_="leaderuser" GROUP_ID_="deptLeader" />
 	
 	<ACT_ID_MEMBERSHIP USER_ID_="kafeitu" GROUP_ID_="user" />
+	
+	<!-- add the new memberShip for Quality Inspect -->
+	<ACT_ID_MEMBERSHIP USER_ID_="test1" GROUP_ID_="controler" />
+	<ACT_ID_MEMBERSHIP USER_ID_="test2" GROUP_ID_="inspector" />
+	<ACT_ID_MEMBERSHIP USER_ID_="test3" GROUP_ID_="vendor" />
+	<ACT_ID_MEMBERSHIP USER_ID_="test4" GROUP_ID_="producer" />
 </dataset>
